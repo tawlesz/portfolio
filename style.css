@@ -1,0 +1,326 @@
+
+/*
+  HEADER, defino espaçamentos e os "displays", edito os links, logo e o botão, que é animado.
+*/
+header {
+  padding: 40px 4%;
+}
+
+header > .interface {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header a {
+  color: #5c5c5c;
+  text-decoration: none;
+  display: inline-block;
+  transition: .2s;
+}
+
+header a:hover {
+  color: #ffffff;
+  transform: scale(1.05);
+}
+
+header nav ul {
+  list-style-type: none;
+}
+
+header nav ul li {
+  display: inline-block;
+  padding: 0 40px;
+}
+
+/* 
+  TOPO DO SITE, formato a imagem adicionando uma animação que a faz ficar subindo e descendo, além de editar os textos do título e do parágrafo além do display pro botão
+*/
+section.topo-do-site {
+  padding: 40px 4%;
+}
+
+section.topo-do-site .flex {
+  align-items: center;
+  justify-content: center;
+  gap: 90px;
+}
+
+.topo-do-site h1 {
+  color: #fff;
+  font-size: 50px;
+  line-height: 40px;
+}
+
+.topo-do-site .txt-topo h1 span {
+  color: #00CFFF;
+}
+
+.topo-do-site .txt-topo .btn-contato a button {
+  display: inline-block;
+}
+
+.topo-do-site .img-topo img {
+  position: relative;
+  animation: mixer 2s ease-in-out infinite alternate;
+}
+
+@keyframes mixer {
+  0% { top: 0; }
+  100% { top: 30px; }
+}
+/* animação com @keyframes */
+
+/*
+  SOBRE MIM, edito os textos e com a classe sobre-mim-box, 
+*/
+.sobre-mim h2 {
+  margin-top: 50px;
+}
+
+.sobre-mim .sobre-mim-box {
+  color: #fff;
+  padding: 40px 4%;
+}
+
+.sobre-mim .flex {
+  gap: 60px;
+}
+
+.sobre-mim .sobre-mim-box h3 {
+  font-size: 30px;
+  margin: 18px 0;
+}
+
+.sobre-mim .sobre-mim-box p {
+  margin: 0;
+  padding: 0;
+}
+
+.paragrafo {
+  padding: 20px 4%;
+  text-align: justify;
+}
+
+.sobre-mim-box {
+  border: 1px solid #ffffff3a;
+  border-radius: 20px 60px;
+  transition: .5s;
+}
+
+.sobre-mim-box:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 0px 8px #ffffff8e;
+}
+
+.box {
+  padding: 40px 4%;
+}
+
+/*
+  FORMAÇÃO
+*/
+.formacao .interface {
+  margin: 80px 4%;
+}
+
+.formacao .img-formacao {
+  display: inline-block;
+  width: 400px;
+  border-radius: 40px 40px;
+  border: 2px solid #00d0ff50;
+}
+
+.formacao .txt-formacao h2 {
+  color: #fff;
+  font-size: 40px;
+}
+
+.formacao .flex {
+  gap: 100px;
+}
+
+.formacao p a {
+  color: #00CFFF;
+  text-decoration: dotted;
+}
+
+/*
+  PORTFÓLIO
+*/
+.portfolio {
+  padding: 80px 4%;
+  text-align: center;
+}
+
+.portfolio .flex {
+  justify-content: center;
+  gap: 40px;
+  margin-top: 40px;
+}
+
+.portfolio .card-box {
+  width: 30%;
+  background-color: #1a1a1a;
+  padding: 20px;
+  border-radius: 15px;
+  transition: transform .3s ease-in-out, box-shadow .3s ease-in-out;
+}
+
+.portfolio .card-box:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0px 20px #00cfff4d;
+}
+
+.portfolio .card-box img {
+  max-width: 100%;
+  border-radius: 10px;
+}
+
+.portfolio .card-box h3 {
+  color: #00CFFF;
+  margin: 15px 0 5px;
+}
+
+.portfolio .card-box p {
+  color: #ccc;
+  font-size: 16px;
+  margin: 0;
+}
+
+.portfolio .card-box p a{
+  color: #ccc;
+
+}
+
+/*
+  CONTATO
+*/
+.contato {
+  padding: 80px 4%;
+  text-align: center;
+}
+
+.contato .formulario {
+  display: flex;
+  flex-direction: column;
+  max-width: 600px;
+  margin: 40px auto 0;
+  gap: 20px;
+}
+
+.contato .formulario input,
+.contato .formulario textarea {
+  padding: 15px;
+  background-color: #1a1a1a;
+  border: 1px solid #ffffff3a;
+  color: #fff;
+  border-radius: 10px;
+}
+
+.contato .formulario textarea {
+  resize: vertical;
+  min-height: 150px;
+}
+
+.contato .formulario button {
+  padding: 15px;
+  font-size: 18px;
+  font-weight: 700;
+  background-color: #00CFFF;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: .2s;
+}
+
+.contato .formulario button:hover {
+  box-shadow: 0px 0px 8px #05d1ff;
+  transform: scale(1.02);
+}
+
+#btnTopo {
+  display: none;
+  bottom: 20px;
+  right: 20px;
+  padding:16px 36px ;
+  border: 2px solid #00CFFF;
+  border-radius: 50px;
+  cursor: pointer;
+  background: #333;
+  color: #fff;
+  font-size: 20px;
+
+  position: fixed;
+}
+
+
+/*
+  RESPONSIVIDADE para difentes screens
+*/
+@media screen and (max-width: 1020px) {
+
+  /* GERAL */
+  .flex {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .interface {
+    padding: 0 8%;
+  }
+
+  /* TOPO DO SITE */
+  .topo-do-site .flex {
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .topo-do-site h1 {
+    font-size: 40px;
+    line-height: 45px;
+  }
+
+  .topo-do-site .img-topo img {
+    width: 100%;
+    max-width: 300px;
+  }
+
+  /* SOBRE MIM */
+  .sobre-mim .flex {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .sobre-mim .sobre-mim-box {
+    width: 100%;
+  }
+
+  /* FORMAÇÃO */
+  .formacao .flex {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .formacao .img-formacao {
+    width: 100%;
+    max-width: 300px;
+  }
+
+  /* PORTFÓLIO */
+  .portfolio .flex {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .portfolio .card-box {
+    width: 100%;
+  }
+
+  /* CONTATO */
+  .contato .contato-form{
+    text-decoration: none;
+  }
+
+}

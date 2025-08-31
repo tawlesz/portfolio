@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfólio TLS</title>
+  <link rel="stylesheet" href="global.css"><!-- linkando com a estilização global -->
+  <link rel="stylesheet" href="style.css"><!-- linkando com a estilização das secções do site -->
+
+  <link rel="shortcut icon" href="icons/minha_logo.png" type="image/x-icon"><!-- favicom do site -->
+</head>
+<body>
+  <!-- CABEÇALHO , contém uma logo do site, um menu <nav>, e um botão estratégico para comtato-->
+  <header>
+    <div class="interface">
+      <div class="logo">
+        <a href="#">
+          <img src="icons/minha_logo.png" alt="Logo Thalles Nonato">
+        </a>
+      </div>
+
+      <nav class="menu-desktop">
+        <ul>
+          <li><a href="#topo-do-site">Início</a></li>
+          <li><a href="#sobre-mim">Sobre mim</a></li>
+          <li><a href="#formacao">Formação</a></li>
+          <li><a href="#portfolio">Portfólio</a></li>
+        </ul>
+      </nav>
+
+      <div class="btn-contato">
+        <a href="#contato">
+          <button>Contato</button>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- TOPO DO SITE, aqui temos a interface inicial com um título, subtítulo, e uma imagem minha gerada com IA, além do botão pra contato estratégico-->
+    <section class="topo-do-site" id="topo-do-site">
+      <div class="interface">
+        <div class="flex">
+          <div class="txt-topo">
+            <h1>ELEVE SUAS IDEIAS E TENHA SUCESSO DIGITAL<span>.</span></h1>
+            <p>
+              Com um modelo de design estratégico aplicado a uma usabilidade
+              fluida e resultados impactantes. Estou à disposição para criar a
+              presença online dos seus sonhos.
+            </p>
+
+            <div class="btn-contato">
+              <a href="#contato">
+                <button>Entrar em contato</button>
+              </a>
+            </div>
+          </div>
+
+          <div class="img-topo">
+            <img src="imagens/minhafoto_com_espalhamento.png" alt="Foto topo do site">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SOBRE MIM, eu me apresento e faço cards para expor meus hobbies e gostos-->
+    <section class="sobre-mim" id="sobre-mim">
+      <div class="interface">
+        <div class="txt-sobre-mim">
+          <h2 class="titulo">SOBRE <span style="color: #00CFFF;">MIM.</span></h2>
+          <p class="paragrafo">
+            Prazer, me chamo Thalles Nonato, sou um desenvolvedor de sistemas em
+            formação. Meus principais valores são a criatividade e a curiosidade
+            de aprender cada vez mais e mais. Meus hobbies são:
+          </p>
+        </div>
+
+        <div class="flex box">
+          <div class="sobre-mim-box">
+            <i><img class="icons" src="icons/displaysvg.svg" alt="Ícone display"></i>
+            <h3>FILMES</h3>
+            <p>Assistir filmes é concerteza uma das atividades mais satistfatórias para mim</p>
+          </div>
+
+          <div class="sobre-mim-box">
+            <i><img class="icons" src="icons/colorsvg.svg" alt="Ícone paleta de cores"></i>
+            <h3>DESENHAR</h3>
+            <p>Amo desenhar, e tenho me arriscado no realismo com lápis e  borracha</p>
+          </div>
+
+          <div class="sobre-mim-box">
+            <i><img class="icons" src="icons/headphonessvg.svg" alt="Ícone headphones"></i>
+            <h3>MÚSICA</h3>
+            <p>Sou extremamente eclético, logo, vários estilos e fascetas me cativam</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FORMAÇÃO, apresento meu nível acadêmico e trago uma outra imagem -->
+    <section class="formacao" id="formacao">
+      <div class="interface box-content">
+        <div class="flex">
+          <div>
+            <img class="img-formacao" src="imagens/minha foto2.jpeg" alt="Foto formação">
+          </div>
+
+          <div class="txt-formacao">
+            <h2 class="titulo">MINHA<span style="color: #00CFFF;"> FORMAÇÃO.</span></h2>
+            <p>
+              Em relação à minha formação acadêmica, estou cursando
+              <strong>ANÁLISE E DESENVOLVIMENTO DE SISTEMAS</strong> na
+              <a href="https://www.uninter.com"><abbr title="UNINTER.com">UNINTER</abbr></a>
+              e <strong>LICENCIATURA EM COMPUTAÇÃO</strong> no
+              <a href="https://ifsertaope.edu.br/petrolina/"><abbr title="IF Sertão PE">IF Sertão PE</abbr></a>.
+              <br><br>
+              Mas meu acervo de conhecimento não se limita apenas às universidades.
+              Estou sempre buscando aperfeiçoar minha carreira com cursos e
+              outros materiais, e desejo num futuro próximo obter mais
+              certificações. Sobre idiomas, tenho inglês intermediário, o que me
+              possibilita acessar conteúdos estrangeiros de qualidade.
+            </p>
+          </div> <!-- txt-formacao -->
+        </div> <!-- flex -->
+      </div> <!-- box-content -->
+    </section>
+
+    <!-- PORTFÓLIO, aqui eu coloco três projetos dentro de três cards, com imagem, legenda e link. Eu fiz o deploy desses sites pelo github pages -->
+    <section class="portfolio" id="portfolio">
+      <div class="interface">
+        <h2 class="titulo">MEU <span style="color: #00CFFF;">PORTFÓLIO.</span></h2>
+        <div class="flex">
+          <div class="card-box">
+            <img src="imagens/projeto1.png" alt="Imagem de projetos web">
+            <h3>Teste de landing page animada</h3>
+            <p><a href="https://tawlesz.github.io/test_animated_landing_js_nonato" target="_blank">acesse aqui: 🔗</a></p>
+          </div><!-- card-box -->
+
+          <div class="card-box">
+            <img src="imagens/projeto2.png" alt="Imagem de projetos web">
+            <h3>Projeto de blog com tags semânticas</h3>
+            <p><a href="https://tawlesz.github.io/projeto_tecnologica_blog" target="_blank">acesse aqui: 🔗</a></p>
+          </div><!-- card-box -->
+
+          <div class="card-box">
+            <img src="imagens/projeto3.png" alt="Imagem de projetos web">
+            <h3>Landing page para loja</h3>
+            <p><a href="https://tawlesz.github.io/loja_IcE_nonato" target="_blank">acesse aqui: 🔗</a></p>
+          </div><!-- card-box -->
+        </div><!-- flex -->
+      </div><!-- interface -->
+    </section><!-- Portfólio -->
+
+    <!-- CONTATO, feito majoritariamente com um formulário-->
+    <section class="contato" id="contato">
+      <div class="interface">
+        <h2 class="titulo">FALE <span style="color: #00CFFF;">COMIGO.</span></h2>
+        <form class="formulario" action="">
+          <input type="text" name="nome" placeholder="Seu nome" required>
+          <input type="email" name="email" placeholder="Seu e-mail" required>
+          <textarea name="mensagem" placeholder="Sua mensagem" required></textarea>
+          <button type="submit">Enviar</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+<button id="btnTopo">⬆ Topo</button>
+
+<script>
+  const btn = document.getElementById("btnTopo");
+
+  window.addEventListener("scroll", () => {
+    if (window.scrollY > 200) {
+      btn.style.display = "block";
+    } else {
+      btn.style.display = "none";
+    }
+  });
+
+  btn.addEventListener("click", () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  });
+</script>
+</body>
+</html>
